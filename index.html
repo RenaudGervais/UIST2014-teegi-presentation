@@ -16,6 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!-- custom css, for example for step-by-step images -->
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -53,12 +55,11 @@
 					</script>
 				</section>
 
-
 				<!-- Mind control in popular media -->
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-							# Mind controlle stuff in popular media
+							# Mind control in popular media
 						</script>
 					</section>
 
@@ -113,23 +114,78 @@
 						</script>
 					</section>
 
+					<!-- first, understand what is not EEG: artifacts are the problem-->
+					<!-- FIXME: disable uppercase for easier acronym? -->
 					<section data-markdown>
 						<script type="text/template">
-							## Thinking about abstract commands
+							## ElectroEncephaloGraphy recordings
+							<video data-autoplay src="./media/EOG.mp4"></video>
+						</script>
+					</section>
+					
+					<!-- FIXME: superscript for "st" with smaller fonts -->
+					<!-- FIXME: fade transition between video and highlight? -->
+					<section data-markdown>
+						<script type="text/template">
+							## 1st problem: Eyes movements
+							![eyes artifacts](./media/EOG_marks.png)
 						</script>
 					</section>
 
 					<section data-markdown>
 						<script type="text/template">
-							## Does not work... why?
+							## 2nd problem: muscular artifacts
+							![muscle artifacts](./media/EMG_marks.png)
 						</script>
+					</section>
+
+					<!-- highlight the fact that the guy seemed focus -->
+					<section data-background="./media/walk.jpg" data-transition="fade">
+					  <h2>Thinking about abstract commands...</h2>
+					  <h2 class="fragment">...does not work</h2>
+					</section>
+
+					<!-- yeah, he definitely is! -->
+					<section data-background="./media/walking_rage_anim.gif" data-transition="fade">
+					  <h2>Thinking about abstract commands...</h2>
+					  <h2>...does not work</h2>
+					</section>
+
+					<section data-markdown data-transition="fade">
+						<script type="text/template">
+							![gtec EEG headset](./media/gtec_headset.jpg)
+						</script>
+					</section>
+
+					<section data-transition="fade">
+					  <img src="./media/scalp.png"   width="715" height="621"/>
+
+					  <img class="fragment by-step" data-fragment-index="1" src="./media/real_left.png" height="64" style="left:730px; top:360px;"/>
+
+					  <img class="fragment by-step" data-fragment-index="2" src="./media/real_right.png" height="64" style="left:500px; top:360px;"/>
+
+					  <img class="fragment by-step" data-fragment-index="3" src="./media/imaginary_left.png" height="72" style="left:700px; top:230px;"/>
+					  <img class="fragment by-step" data-fragment-index="3" src="./media/imaginary_right.png" height="72" style="left:470px; top:230px;"/>
+					</section>
+
+					<section>
+					  <h2>Motor Imagery</h2>
+
+					  <img class="fragment" src="./media/laplacian.png" height="300px"/>
+					  <img class="fragment" src="./media/motor_raw.png" height="300px"/>
+					  <img class="fragment" src="./media/bandwidth_select.png" height="300px"/>
+					  <img class="fragment" src="./media/motor_filter.png" height="300px"/>
+					  <img class="fragment" src="./media/formula.png" height="300px"/>
+					  <img class="fragment" src="./media/motor_power.png" height="300px"/>
+
+					  <img class="fragment by-step" src="./media/motor_scenario_trans.png" height="550px" style="left:320px; top:125px;"/>
 					</section>
 				</section>
 
 
 				<!-- Current tools -->
 				<section>
-					<section data-markdown>
+					<section data-markdown data-background="./media/EEG_tools.png">
 						<script type="text/template">
 							# Current tools
 						</script>
@@ -362,7 +418,8 @@
 
 					<section data-markdown>
 						<script type="text/template">
-							## Video
+						  ## 10 participants
+						  <video data-autoplay src="./media/study_participants.mp4"></video>
 						</script>
 					</section>
 

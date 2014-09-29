@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* floating positing for step-by-step images */
+.by-step  {
+    display: block;
+    position: absolute;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/* override theme css */
+/* FIXME: only for by-step class? */
+.reveal section img {
+  margin: 0;
+  /* no background color (deters transparancy otherwise) */
+  background: rgba(255, 255, 255, 0);
+  /* disable border and shadow */
+  border: 0;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+}
