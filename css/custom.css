@@ -19,3 +19,8 @@
   border: 0;
   box-shadow: 0 0 0px rgba(255, 255, 255, 0);
 }
+
+/* override main theme */
+.reveal .slide-number {
+	font-size: 32px;
+}
